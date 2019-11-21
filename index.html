@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Claim vs E Time CATEGORÍA</title>
+   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+<!--font ibm-->
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.4.3/dist/js/tabulator.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css" rel="stylesheet" type="text/css" />
+
+<!-- Script CRIS -->
+<link href="https://unpkg.com/tabulator-tables@4.4.3/dist/css/tabulator.min.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.4.3/css/tabulator_modern.min.css" rel="stylesheet"> 
+<link rel="stylesheet" href="style.css">
+  <!-- Link -->
+  <!-- {{{payload.script}}} -->
+  <!-- /Link -->
+  
+  <!-- Style -->
+  <!-- {{{global.payload.style}}} -->
+  <!-- /Style -->
+  
 </head>
-<body>
+
+<body class="grey lighten-3">
+    <!--Main Navigation-->
+    <header>
+        <!-- Navbar -->
+        <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container-fluid">
+                <!-- Brand -->
+               <!-- <a class="navbar-brand waves-effect" href="https://cracrr.mybluemix.net/pvlr">
+                    <strong class="white-text">Automatization</strong>
+                </a>
+            </div>
+        </nav> -->
+        <!-- Navbar -->
+
+        <!-- Sidebar -->
+        <div class="sidebar-fixed position-fixed">
+             
+            <a class="waves-effect" href="https://cracrr.mybluemix.net/base">
+                <img src="http://www.pngall.com/wp-content/uploads/2016/03/IBM-White-Logo-PNG.png" height="55px" style="padding-top:10px;padding-left:50px;" alt="">
+            </a>
+            
+            <hr>
+
+            <div class="list-group list-group-flush">
+                
+                <a href="https://frontcraapps.us-south.cf.appdomain.cloud/claimvsetime" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fas fa-chart-pie mr-3"></i>Resumen
+                </a>
+                 <a class="list-group-item list-group-item-action waves-effect" href="#"><i class="fa fa-user fa-lg mr-3"></i>Perfil </a>
+		     <a class="list-group-item list-group-item-action waves-effect" href="#"><i class="fa fa-home fa-lg mr-3"></i>Home </a>
+                
+            </div>
+        </div>
+        <!-- Sidebar -->
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="pt-5 mx-lg-5">
+        <div class="container-fluid" id="tittlecla">
+            <!-- Heading -->
+           <div class="card mb-4 wow fadeIn">
+                <center><strong>Vision General</strong></center> 
+                 <center><h2 class="h2-responsive"><strong> CLAIM VS E-TIME</strong></h2></center>
+            </div>
+        </div>
+        <!--Grid row-->
+        
+        <!--INSERTAR BODY -->
+          
+  <div class="card">
+    <div class="card-body">
+        <center> 
+          <div class="spinner-border text-primary big" id="loader" role="status">
+            <span class="sr-only">.</span>
+          </div>
+        </center>
+        <div id="example-table"></div>
+    </div> 
+  </div>
+  
+  <br/>  
+    <center> 
+      <div class="card text-center" style="width: 50rem;">
+        <canvas id="myChart" width="1000" height="500"></canvas>
+      </div>
+    </center>
+  
+  <br/>  <br/>  
     
+            <!-- {{{payload.craCategoria}}} -->
+        <!-- /INSERTAR BODY -->
+
+        
+        <!--Grid row-->
+
+    
+    </main>
+    <!--Main layout-->
+
+<script src="app.js"></script>
 </body>
+
 </html>
